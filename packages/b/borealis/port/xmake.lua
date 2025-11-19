@@ -55,7 +55,7 @@ add_requires("yoga =2.0.1")
 add_requires("stb")
 add_requires("nanovg")
 add_requires("nlohmann_json")
-add_requires("fmt")
+add_requires("fmt <12.0.0")
 add_requires("tweeny")
 
 add_defines(

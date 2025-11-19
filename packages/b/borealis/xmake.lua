@@ -32,7 +32,7 @@ package("borealis")
         "nanovg",
         "yoga =2.0.1",
         "nlohmann_json",
-        "fmt",
+        "fmt <12.0.0",
         "tweeny",
         "stb",
         "tinyxml2"
@@ -47,6 +47,8 @@ package("borealis")
         add_deps("dbus")
     end
     
+    -- add_patches("2025.08.02", "patches/2025.08.02/use-std-localtime.patch", "bf1aeb6f2c3d30d21ab83a01a29d383a344594eef7881b1e43e70e5de2992fae")
+
     on_load(function (package)
         local window = package:config("window")
         local driver = package:config("driver")
